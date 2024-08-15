@@ -1,0 +1,1383 @@
+{
+    "os": "Linux-5.14.21-150400.24.81_12.0.87-cray_shasta_c-x86_64-with-glibc2.31",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-08-13T21:37:39.255801",
+    "startedAt": "2024-08-13T21:37:38.686251",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_name",
+        "meta-llama/Llama-2-7b-hf",
+        "--task_name",
+        "DROP",
+        "--output_dir",
+        "result/DROP-Llama-2-7b-hf-quanta-3-4-1e-4-314159",
+        "--tag",
+        "quanta-3-4-1e-4-314159",
+        "--tuning_type",
+        "quanta",
+        "--train_set_seed",
+        "2718281",
+        "--seed",
+        "314159",
+        "--num_train",
+        "2000",
+        "--num_dev",
+        "800",
+        "--num_eval",
+        "1200",
+        "--logging_steps",
+        "10",
+        "--trainer",
+        "regular",
+        "--learning_rate",
+        "1e-4",
+        "--num_train_epochs",
+        "3",
+        "--per_device_train_batch_size",
+        "1",
+        "--load_best_model_at_end",
+        "--evaluation_strategy",
+        "steps",
+        "--eval_step",
+        "500",
+        "--save_strategy",
+        "steps",
+        "--save_step",
+        "500",
+        "--save_total_limit",
+        "1",
+        "--train_as_classification",
+        "--target_modules",
+        "q_proj",
+        "v_proj",
+        "--quanta_per_dim_features",
+        "16",
+        "8",
+        "8",
+        "4",
+        "--gradient_accumulation_steps",
+        "4",
+        "--train_as_classification",
+        "False"
+    ],
+    "state": "running",
+    "program": "/pscratch/sd/g/gzquse/quanta/run/run.py",
+    "codePathLocal": "run.py",
+    "codePath": "run/run.py",
+    "git": {
+        "remote": "https://github.com/quanta-fine-tuning/quanta.git",
+        "commit": "84eca18fad710b39943752c08e69c1900d3e92b9"
+    },
+    "email": "\\nziqinguse@gmail.com",
+    "root": "/pscratch/sd/g/gzquse/quanta",
+    "host": "login20",
+    "username": "gzquse",
+    "executable": "/pscratch/sd/g/gzquse/quanta_env/bin/python",
+    "cpu_count": 128,
+    "cpu_count_logical": 256,
+    "cpu_freq": {
+        "current": 2106.1820195312466,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2671.932,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.103,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.097,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.106,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3092.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.639,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.089,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3093.615,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3093.37,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3093.506,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.102,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3093.032,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.099,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3092.857,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.099,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.096,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.103,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.104,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.089,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3093.496,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3093.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3093.507,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.101,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3093.521,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.105,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3094.013,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1996.196,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 251.56895446777344,
+            "used": 1.4502906799316406
+        }
+    },
+    "gpu": "NVIDIA A100-PCIE-40GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        }
+    ],
+    "memory": {
+        "total": 503.1379089355469
+    }
+}

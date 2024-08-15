@@ -1,0 +1,190 @@
+2024-08-13 14:37:38,715 INFO    StreamThr :2177620 [internal.py:wandb_internal():85] W&B internal server running at pid: 2177620, started at: 2024-08-13 14:37:38.711633
+2024-08-13 14:37:38,717 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: status
+2024-08-13 14:37:38,723 INFO    WriterThread:2177620 [datastore.py:open_for_write():87] open: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/run-j2kwh70g.wandb
+2024-08-13 14:37:38,729 DEBUG   SenderThread:2177620 [sender.py:send():391] send: header
+2024-08-13 14:37:38,740 DEBUG   SenderThread:2177620 [sender.py:send():391] send: run
+2024-08-13 14:37:39,003 INFO    SenderThread:2177620 [dir_watcher.py:__init__():211] watching files in: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files
+2024-08-13 14:37:39,003 INFO    SenderThread:2177620 [sender.py:_start_run_threads():1200] run started: j2kwh70g with start time 1723585058.714408
+2024-08-13 14:37:39,008 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: check_version
+2024-08-13 14:37:39,009 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: check_version
+2024-08-13 14:37:39,118 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: run_start
+2024-08-13 14:37:39,141 DEBUG   HandlerThread:2177620 [system_info.py:__init__():26] System info init
+2024-08-13 14:37:39,141 DEBUG   HandlerThread:2177620 [system_info.py:__init__():41] System info init done
+2024-08-13 14:37:39,141 INFO    HandlerThread:2177620 [system_monitor.py:start():194] Starting system monitor
+2024-08-13 14:37:39,141 INFO    SystemMonitor:2177620 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-13 14:37:39,142 INFO    HandlerThread:2177620 [system_monitor.py:probe():214] Collecting system info
+2024-08-13 14:37:39,144 INFO    SystemMonitor:2177620 [interfaces.py:start():188] Started cpu monitoring
+2024-08-13 14:37:39,144 INFO    SystemMonitor:2177620 [interfaces.py:start():188] Started disk monitoring
+2024-08-13 14:37:39,145 INFO    SystemMonitor:2177620 [interfaces.py:start():188] Started gpu monitoring
+2024-08-13 14:37:39,146 INFO    SystemMonitor:2177620 [interfaces.py:start():188] Started memory monitoring
+2024-08-13 14:37:39,147 INFO    SystemMonitor:2177620 [interfaces.py:start():188] Started network monitoring
+2024-08-13 14:37:39,255 DEBUG   HandlerThread:2177620 [system_info.py:probe():152] Probing system
+2024-08-13 14:37:39,259 DEBUG   HandlerThread:2177620 [system_info.py:_probe_git():137] Probing git
+2024-08-13 14:37:39,274 DEBUG   HandlerThread:2177620 [system_info.py:_probe_git():145] Probing git done
+2024-08-13 14:37:39,274 DEBUG   HandlerThread:2177620 [system_info.py:probe():200] Probing system done
+2024-08-13 14:37:39,274 DEBUG   HandlerThread:2177620 [system_monitor.py:probe():223] {'os': 'Linux-5.14.21-150400.24.81_12.0.87-cray_shasta_c-x86_64-with-glibc2.31', 'python': '3.12.4', 'heartbeatAt': '2024-08-13T21:37:39.255801', 'startedAt': '2024-08-13T21:37:38.686251', 'docker': None, 'cuda': None, 'args': ('--model_name', 'meta-llama/Llama-2-7b-hf', '--task_name', 'DROP', '--output_dir', 'result/DROP-Llama-2-7b-hf-quanta-3-4-1e-4-314159', '--tag', 'quanta-3-4-1e-4-314159', '--tuning_type', 'quanta', '--train_set_seed', '2718281', '--seed', '314159', '--num_train', '2000', '--num_dev', '800', '--num_eval', '1200', '--logging_steps', '10', '--trainer', 'regular', '--learning_rate', '1e-4', '--num_train_epochs', '3', '--per_device_train_batch_size', '1', '--load_best_model_at_end', '--evaluation_strategy', 'steps', '--eval_step', '500', '--save_strategy', 'steps', '--save_step', '500', '--save_total_limit', '1', '--train_as_classification', '--target_modules', 'q_proj', 'v_proj', '--quanta_per_dim_features', '16', '8', '8', '4', '--gradient_accumulation_steps', '4', '--train_as_classification', 'False'), 'state': 'running', 'program': '/pscratch/sd/g/gzquse/quanta/run/run.py', 'codePathLocal': 'run.py', 'codePath': 'run/run.py', 'git': {'remote': 'https://github.com/quanta-fine-tuning/quanta.git', 'commit': '84eca18fad710b39943752c08e69c1900d3e92b9'}, 'email': '\\nziqinguse@gmail.com', 'root': '/pscratch/sd/g/gzquse/quanta', 'host': 'login20', 'username': 'gzquse', 'executable': '/pscratch/sd/g/gzquse/quanta_env/bin/python', 'cpu_count': 128, 'cpu_count_logical': 256, 'cpu_freq': {'current': 2106.1820195312466, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2671.932, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.103, 'min': 0.0, 'max': 0.0}, {'current': 3094.097, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.106, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3092.636, 'min': 0.0, 'max': 0.0}, {'current': 2688.639, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.089, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3093.615, 'min': 0.0, 'max': 0.0}, {'current': 3093.37, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3093.506, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.102, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3093.032, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.099, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3092.857, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.099, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.096, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.103, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.104, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.089, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3093.496, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3093.003, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3093.507, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.101, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3093.521, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.105, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 3094.013, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}, {'current': 1996.196, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 251.56895446777344, 'used': 1.4502906799316406}}, 'gpu': 'NVIDIA A100-PCIE-40GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}], 'memory': {'total': 503.1379089355469}}
+2024-08-13 14:37:39,275 INFO    HandlerThread:2177620 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-13 14:37:39,275 INFO    HandlerThread:2177620 [system_monitor.py:probe():227] Publishing system info
+2024-08-13 14:37:39,275 DEBUG   HandlerThread:2177620 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-13 14:37:40,005 INFO    Thread-12 :2177620 [dir_watcher.py:_on_file_created():271] file/dir created: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/conda-environment.yaml
+2024-08-13 14:37:42,297 DEBUG   HandlerThread:2177620 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-13 14:37:42,301 INFO    HandlerThread:2177620 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-13 14:37:42,308 DEBUG   SenderThread:2177620 [sender.py:send():391] send: files
+2024-08-13 14:37:42,308 INFO    SenderThread:2177620 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-08-13 14:37:42,400 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-13 14:37:42,401 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: python_packages
+2024-08-13 14:37:42,402 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 14:37:42,402 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-13 14:37:42,404 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: stop_status
+2024-08-13 14:37:42,632 DEBUG   SenderThread:2177620 [sender.py:send():391] send: telemetry
+2024-08-13 14:37:42,634 DEBUG   SenderThread:2177620 [sender.py:send():391] send: exit
+2024-08-13 14:37:42,634 INFO    SenderThread:2177620 [sender.py:send_exit():598] handling exit code: 1
+2024-08-13 14:37:42,635 INFO    SenderThread:2177620 [sender.py:send_exit():600] handling runtime: 3
+2024-08-13 14:37:42,637 INFO    SenderThread:2177620 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-13 14:37:42,637 INFO    SenderThread:2177620 [sender.py:send_exit():606] send defer
+2024-08-13 14:37:42,637 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:42,637 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 0
+2024-08-13 14:37:42,638 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:42,638 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-08-13 14:37:42,638 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 1
+2024-08-13 14:37:42,638 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:42,638 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 1
+2024-08-13 14:37:42,638 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:42,638 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-08-13 14:37:42,638 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 2
+2024-08-13 14:37:42,638 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:42,638 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 2
+2024-08-13 14:37:42,639 INFO    HandlerThread:2177620 [system_monitor.py:finish():203] Stopping system monitor
+2024-08-13 14:37:42,639 DEBUG   SystemMonitor:2177620 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-13 14:37:42,640 INFO    HandlerThread:2177620 [interfaces.py:finish():200] Joined cpu monitor
+2024-08-13 14:37:42,640 DEBUG   SystemMonitor:2177620 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-13 14:37:42,640 INFO    HandlerThread:2177620 [interfaces.py:finish():200] Joined disk monitor
+2024-08-13 14:37:42,640 DEBUG   SystemMonitor:2177620 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-13 14:37:42,702 INFO    wandb-upload_0:2177620 [upload_job.py:push():130] Uploaded file /tmp/tmplzzwi1fuwandb/jaqpu87c-wandb-metadata.json
+2024-08-13 14:37:43,009 INFO    Thread-12 :2177620 [dir_watcher.py:_on_file_modified():288] file/dir modified: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/conda-environment.yaml
+2024-08-13 14:37:43,010 INFO    Thread-12 :2177620 [dir_watcher.py:_on_file_created():271] file/dir created: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/wandb-summary.json
+2024-08-13 14:37:43,010 INFO    Thread-12 :2177620 [dir_watcher.py:_on_file_created():271] file/dir created: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/output.log
+2024-08-13 14:37:43,010 INFO    Thread-12 :2177620 [dir_watcher.py:_on_file_created():271] file/dir created: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/wandb-metadata.json
+2024-08-13 14:37:43,010 INFO    Thread-12 :2177620 [dir_watcher.py:_on_file_created():271] file/dir created: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/requirements.txt
+2024-08-13 14:37:43,303 INFO    HandlerThread:2177620 [interfaces.py:finish():200] Joined gpu monitor
+2024-08-13 14:37:43,303 INFO    HandlerThread:2177620 [interfaces.py:finish():200] Joined memory monitor
+2024-08-13 14:37:43,303 INFO    HandlerThread:2177620 [interfaces.py:finish():200] Joined network monitor
+2024-08-13 14:37:43,304 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:43,304 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-08-13 14:37:43,304 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 3
+2024-08-13 14:37:43,304 DEBUG   SenderThread:2177620 [sender.py:send():391] send: stats
+2024-08-13 14:37:43,304 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:43,305 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 3
+2024-08-13 14:37:43,305 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:43,306 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-08-13 14:37:43,306 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 4
+2024-08-13 14:37:43,306 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:43,306 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 4
+2024-08-13 14:37:43,306 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:43,306 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-08-13 14:37:43,306 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 5
+2024-08-13 14:37:43,306 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:43,306 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 5
+2024-08-13 14:37:43,306 DEBUG   SenderThread:2177620 [sender.py:send():391] send: summary
+2024-08-13 14:37:43,308 INFO    SenderThread:2177620 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-13 14:37:43,308 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:43,308 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-08-13 14:37:43,308 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 6
+2024-08-13 14:37:43,308 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:43,308 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 6
+2024-08-13 14:37:43,309 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:43,309 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-08-13 14:37:43,311 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: status_report
+2024-08-13 14:37:43,411 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 7
+2024-08-13 14:37:43,412 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:43,412 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 7
+2024-08-13 14:37:43,412 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:43,412 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-08-13 14:37:43,550 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-13 14:37:44,011 INFO    Thread-12 :2177620 [dir_watcher.py:_on_file_modified():288] file/dir modified: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/wandb-summary.json
+2024-08-13 14:37:44,011 INFO    Thread-12 :2177620 [dir_watcher.py:_on_file_modified():288] file/dir modified: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/config.yaml
+2024-08-13 14:37:44,650 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 8
+2024-08-13 14:37:44,650 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: poll_exit
+2024-08-13 14:37:44,650 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:44,651 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 8
+2024-08-13 14:37:44,651 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:44,651 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-08-13 14:37:44,651 INFO    SenderThread:2177620 [job_builder.py:build():440] Attempting to build job artifact
+2024-08-13 14:37:44,652 INFO    SenderThread:2177620 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-08-13 14:37:44,704 INFO    SenderThread:2177620 [job_builder.py:build():545] adding wandb-job metadata file
+2024-08-13 14:37:44,709 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 9
+2024-08-13 14:37:44,709 DEBUG   SenderThread:2177620 [sender.py:send():391] send: artifact
+2024-08-13 14:37:44,709 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:44,711 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 9
+2024-08-13 14:37:45,011 INFO    Thread-12 :2177620 [dir_watcher.py:_on_file_modified():288] file/dir modified: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/output.log
+2024-08-13 14:37:45,454 INFO    wandb-upload_1:2177620 [upload_job.py:push():88] Uploaded file /tmp/tmp3ci1smny/wandb-job.json
+2024-08-13 14:37:45,463 INFO    wandb-upload_0:2177620 [upload_job.py:push():88] Uploaded file /global/homes/g/gzquse/.local/share/wandb/artifacts/staging/tmp1gmdpdpb
+2024-08-13 14:37:45,550 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-13 14:37:46,439 INFO    SenderThread:2177620 [sender.py:send_artifact():1549] sent artifact job-https___github.com_quanta-fine-tuning_quanta.git_run_run.py - {'id': 'QXJ0aWZhY3Q6MTE0ODgyNDU3Ng==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxMzg1NTI2NA==', 'latestArtifact': None}}
+2024-08-13 14:37:46,439 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:46,439 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-08-13 14:37:46,439 INFO    SenderThread:2177620 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-13 14:37:47,013 INFO    SenderThread:2177620 [dir_watcher.py:finish():388] scan: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files
+2024-08-13 14:37:47,013 INFO    SenderThread:2177620 [dir_watcher.py:finish():402] scan save: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/conda-environment.yaml conda-environment.yaml
+2024-08-13 14:37:47,013 INFO    SenderThread:2177620 [dir_watcher.py:finish():402] scan save: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/output.log output.log
+2024-08-13 14:37:47,016 INFO    SenderThread:2177620 [dir_watcher.py:finish():402] scan save: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/wandb-metadata.json wandb-metadata.json
+2024-08-13 14:37:47,016 INFO    SenderThread:2177620 [dir_watcher.py:finish():402] scan save: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/wandb-summary.json wandb-summary.json
+2024-08-13 14:37:47,018 INFO    SenderThread:2177620 [dir_watcher.py:finish():402] scan save: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/requirements.txt requirements.txt
+2024-08-13 14:37:47,020 INFO    SenderThread:2177620 [dir_watcher.py:finish():402] scan save: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/config.yaml config.yaml
+2024-08-13 14:37:47,020 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 10
+2024-08-13 14:37:47,022 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: poll_exit
+2024-08-13 14:37:47,023 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:47,024 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 10
+2024-08-13 14:37:47,024 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:47,024 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-08-13 14:37:47,024 INFO    SenderThread:2177620 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-13 14:37:47,255 INFO    wandb-upload_1:2177620 [upload_job.py:push():130] Uploaded file /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/conda-environment.yaml
+2024-08-13 14:37:47,259 INFO    wandb-upload_0:2177620 [upload_job.py:push():130] Uploaded file /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/output.log
+2024-08-13 14:37:47,341 INFO    wandb-upload_4:2177620 [upload_job.py:push():130] Uploaded file /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/config.yaml
+2024-08-13 14:37:47,353 INFO    wandb-upload_3:2177620 [upload_job.py:push():130] Uploaded file /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/requirements.txt
+2024-08-13 14:37:47,363 INFO    wandb-upload_2:2177620 [upload_job.py:push():130] Uploaded file /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/files/wandb-summary.json
+2024-08-13 14:37:47,552 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-13 14:37:47,552 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: poll_exit
+2024-08-13 14:37:47,564 INFO    Thread-11 (_thread_body):2177620 [sender.py:transition_state():626] send defer: 11
+2024-08-13 14:37:47,564 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:47,565 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 11
+2024-08-13 14:37:47,565 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:47,565 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-08-13 14:37:47,565 INFO    SenderThread:2177620 [file_pusher.py:join():175] waiting for file pusher
+2024-08-13 14:37:47,565 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 12
+2024-08-13 14:37:47,565 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:47,565 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 12
+2024-08-13 14:37:47,566 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:47,566 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-08-13 14:37:47,566 INFO    SenderThread:2177620 [file_stream.py:finish():601] file stream finish called
+2024-08-13 14:37:47,662 INFO    SenderThread:2177620 [file_stream.py:finish():605] file stream finish is done
+2024-08-13 14:37:47,662 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 13
+2024-08-13 14:37:47,662 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:47,663 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 13
+2024-08-13 14:37:47,663 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:47,663 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-08-13 14:37:47,663 INFO    SenderThread:2177620 [sender.py:transition_state():626] send defer: 14
+2024-08-13 14:37:47,663 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: defer
+2024-08-13 14:37:47,663 DEBUG   SenderThread:2177620 [sender.py:send():391] send: final
+2024-08-13 14:37:47,663 INFO    HandlerThread:2177620 [handler.py:handle_request_defer():184] handle defer: 14
+2024-08-13 14:37:47,663 DEBUG   SenderThread:2177620 [sender.py:send():391] send: footer
+2024-08-13 14:37:47,664 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: defer
+2024-08-13 14:37:47,664 INFO    SenderThread:2177620 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-08-13 14:37:47,664 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-13 14:37:47,664 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: poll_exit
+2024-08-13 14:37:47,665 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: server_info
+2024-08-13 14:37:47,665 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-13 14:37:47,665 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: server_info
+2024-08-13 14:37:47,667 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: get_summary
+2024-08-13 14:37:47,667 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: sampled_history
+2024-08-13 14:37:47,667 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 14:37:47,745 DEBUG   SenderThread:2177620 [sender.py:send_request():418] send_request: poll_exit
+2024-08-13 14:37:47,746 INFO    MainThread:2177620 [wandb_run.py:_footer_history_summary_info():4035] rendering history
+2024-08-13 14:37:47,746 INFO    MainThread:2177620 [wandb_run.py:_footer_history_summary_info():4067] rendering summary
+2024-08-13 14:37:47,746 INFO    MainThread:2177620 [wandb_run.py:_footer_sync_info():3994] logging synced files
+2024-08-13 14:37:47,747 DEBUG   HandlerThread:2177620 [handler.py:handle_request():158] handle_request: shutdown
+2024-08-13 14:37:47,747 INFO    HandlerThread:2177620 [handler.py:finish():882] shutting down handler
+2024-08-13 14:37:48,665 INFO    WriterThread:2177620 [datastore.py:close():296] close: /pscratch/sd/g/gzquse/quanta/run/wandb/run-20240813_143738-j2kwh70g/run-j2kwh70g.wandb
+2024-08-13 14:37:48,746 INFO    SenderThread:2177620 [sender.py:finish():1631] shutting down sender
+2024-08-13 14:37:48,746 INFO    SenderThread:2177620 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-13 14:37:48,746 INFO    SenderThread:2177620 [file_pusher.py:join():175] waiting for file pusher
